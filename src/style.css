@@ -1,0 +1,42 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;   
+}
+.headDiv::before{
+    content: "";
+    position: absolute;
+    top:-4vw ;
+    left: -3vw;
+    width: 55%;
+    height: 109.1vh;
+    background: linear-gradient(180deg, rgb(54, 107, 209,1) 0%,rgb(171, 62, 141,1) 100%);
+    opacity: 0.8;
+    z-index: -1;
+}
+.video::before{
+    content: "";
+    height: 20vw; 
+    width: 47vw;
+    position:absolute;
+    top: 12vw;
+    left: 0vw;
+    background: #5181d3;
+    z-index: -1;
+}
+@media (max-width:600px) {
+    .headDiv::before{
+        width: 90%;
+    }
+    .headDiv::before{
+        top: 15vw;
+    }
+}
+@media (max-width:1000px) {
+    .firstpage{
+        padding-top: 40vw;
+    }
+}

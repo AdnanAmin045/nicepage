@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet"/>
+
+  </head>
+  <body class="font-[Roboto, Arial, sans-serif] overflow-x-hidden">
+    <section class="mobile:relative">
+      <nav
+        class="flex justify-between items-center px-[3vw] laptop:h-[4vw] mobile:h-[15vw] w-[100%] bg-[#fafafa] fixed top-0 z-[2000]"
+      >
+        <div class="flex gap-[2vw]">
+          <img
+            src="https://csite.nicepage.com/Images/logo-w.png"
+            class="laptop:w-[10vw] mobile:w-[35vw]"
+            alt="nicepage.com"
+          />
+          <div
+            class="flex items-center gap-[1.5vw] text-[0.9vw] mobile:hidden laptop:flex"
+          >
+            <div
+              class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+            >
+              Download
+            </div>
+            <div
+              class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+            >
+              400+Features
+            </div>
+            <div
+              class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+            >
+              15,000+ Templates
+            </div>
+            <div
+              class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+            >
+              Website Builders
+            </div>
+            <div
+              class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+            >
+              Pricing
+            </div>
+            <div
+              class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+            >
+              Forums
+            </div>
+            <div
+              class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+            >
+              Blogs
+            </div>
+            <div
+              class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+            >
+              Help
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-[2vw] text-[0.9vw] mobile:hidden laptop:flex">
+          <div
+            class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+          >
+            Sign in
+          </div>
+          <div
+            class="p-[0.6vw] duration-[0.5s] rounded-[0.4vw] hover:bg-[#E5E5E5] cursor-pointer"
+          >
+            Register
+          </div>
+        </div>
+        <div class=" menuBtn mobile:block laptop:hidden">
+          <i class="ri-menu-line text-[10vw]"></i>
+        </div>
+      </nav>
+      <div
+        class="firstpage bg-[url('https://images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/b7e0515f99d45a21927d8be2/bg2.jpg')] bg-cover bg-center relative laptop:h-[150vh] mobile:h-auto laptop:pt-[5vw] mobile:pt-[15vw] mobile:flex mobile:items-center mobile:flex-col"
+      >
+        <img
+          alt=""
+          class="absolute z-[1111] laptop:top-[5vw] laptop:left-10 laptop:w-[20vw] mobile:w-[40vw] mobile:top-[15vw] mobile:left-0"
+          data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png"
+          data-aos="slide-down"
+          src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png"
+        />
+        <div
+          class="h-[70%] laptop:ml-[15vw] mt-[5vw]  z-[999] relative headDiv mobile:px-[5vw] mobile:pt-[20vw] laptop:pt-0"
+        >
+          <div
+            class="h-[92%] laptop:w-[70%] flex flex-col bg-[#102456] opacity-90 p-[4vw] mobile:w-[100%]"
+          >
+            <h2 class="laptop:text-[1.3vw] mobile:text-[6vw] text-[white]">
+              Ultimate Freehand. Web Design 3.0
+            </h2>
+            <h1
+              class="laptop:text-[4vw] mobile:text-[12vw] text-[white] font-bold leading-none py-[2vw]"
+            >
+              Create stunning websites and themes
+            </h1>
+            <p class="laptop:text-[1.3vw] mobile:text-[6vw] text-[white]">
+              Website Builder Software. Mobile-Friendly. No Coding
+            </p>
+            <p
+              class="laptop:text-[1.5vw] mobile:text-[6.5vw] text-[white] font-bold"
+            >
+              WordPress, Joomla, HTML5, Windows, Mac OS and Online
+            </p>
+            <button
+              class="laptop:h-[4vw] laptop:w-[20vw] mobile:h-[15vw] mobile:w-[50vw] flex justify-center items-center bg-[#f15048] laptop:text-[1.2vw] mobile:text-[4vw] text-[white] rounded-[0.4vw] p-[0.2vw] self-center laptop:mt-[3vw] mobile:mt-[10vw] font-bold shadow-sm tracking-widest uppercase"
+            >
+              Download Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="h-[13vw] w-[18vw] laptop:flex flex-col justify-center items-center absolute top-[10vw] left-[70vw] bg-[#3771d4] opacity-80 z-[1000] mobile:hidden"
+        >
+          <div class="text-white text-[2.5vw] leading-none font-bold">
+            Web Design
+          </div>
+          <div class="text-white text-[8vw] leading-none font-bold">30</div>
+        </div>
+        <div
+          class="flex gap-4 mt-[3vw] laptop:absolute laptop:top-[40vw] laptop:left-[10vw] z-[1000] mobile:flex-col laptop:flex-row mobile:py-[10vw] mobile:w-[100%] mobile:px-[5vw] laptop:px-0"
+        >
+          <div
+            class="laptop:h-[12vw] laptop:w-[15vw] mobile:h-[60vw] mobile:w-full bg-[#567cbd] opacity-80 flex flex-col items-center justify-center text-center flex-wrap"
+          >
+            <i
+              class="fa-brands fa-windows laptop:text-[5vw] mobile:text-[15vw] text-[#bccae5]"
+            ></i>
+            <p
+              class="laptop:text-[1.1vw] mobile:text-[7vw] text-[white] font-bold"
+            >
+              Download <br />
+              Windows App »
+            </p>
+          </div>
+          <div
+            class="laptop:h-[12vw] laptop:w-[15vw] mobile:h-[60vw] mobile:w-full bg-[#567cbd] opacity-80 flex flex-col items-center justify-center text-center"
+          >
+            <i
+              class="fa-brands fa-apple laptop:text-[5vw] mobile:text-[15vw] text-[#bccae5]"
+            ></i>
+            <p
+              class="laptop:text-[1.1vw] mobile:text-[7vw] text-[white] font-bold"
+            >
+              Download <br />
+              Mac OS App »
+            </p>
+          </div>
+          <div
+            class="laptop:h-[12vw] laptop:w-[15vw] mobile:h-[60vw] mobile:w-full bg-[#567cbd] opacity-80 flex flex-col items-center justify-center text-center"
+          >
+            <i
+              class="fa-brands fa-wordpress laptop:text-[5vw] mobile:text-[15vw] text-[#bccae5]"
+            ></i>
+            <p
+              class="laptop:text-[1.1vw] mobile:text-[7vw] text-[white] font-bold"
+            >
+              Get <br />
+              WordPress Plugin »
+            </p>
+          </div>
+          <div
+            class="laptop:h-[12vw] laptop:w-[15vw] mobile:h-[60vw] mobile:w-full bg-[#567cbd] opacity-80 flex flex-col items-center justify-center text-center"
+          >
+            <i
+              class="fa-brands fa-joomla laptop:text-[5vw] mobile:text-[15vw] text-[#bccae5]"
+            ></i>
+            <p
+              class="laptop:text-[1.1vw] mobile:text-[7vw] text-[white] font-bold"
+            >
+              Get <br />
+              Joomla Extension »
+            </p>
+          </div>
+          <div
+            class="laptop:h-[12vw] laptop:w-[15vw] mobile:h-[60vw] mobile:w-full bg-[#567cbd] opacity-80 flex flex-col items-center justify-center text-center"
+          >
+            <i
+              class="fa-solid fa-globe laptop:text-[5vw] mobile:text-[15vw] text-[#bccae5]"
+            ></i>
+            <p
+              class="laptop:text-[1.1vw] mobile:text-[7vw] text-[white] font-bold"
+            >
+              Start <br />
+              Nicepage Online »
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="laptop:hidden responsiveMenu mobile:flex mobile:flex-col gap-[5vw] mobile:w-[100%]  absolute mobile:py-[15vw] mobile:mt-[15vw] bg-[#fafafa] mobile:z-[3954] mobile:top-0 mobile:fixed transform translate-x-[100%] mobile:px-[5vw]">
+        <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">Download</div>
+        <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">400+ Features</div>
+        <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">15,000+ Templates</div>
+        <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">Website Builders</div>
+        <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">Pricing</div>
+        <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">Forums</div>
+        <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">Blogs</div>
+        <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">Help</div>
+        <div class="flex justify-center py-[20vw] gap-11">
+          <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">Sign In</div>
+          <div class="p-[0.6vw] text-[5vw]  font-[500] text-black">Register</div>
+        </div>  
+      </div>  
+    </section>
+    <section
+      class="h-[100%] bg-[white] mobile:w-[100%] py-[6vw] mx[10vw] relative mobile:px-[5vw]"
+    >
+      <img
+        alt=""
+        class="absolute laptop:top-0 laptop:right-60 mobile:right-0 mobile:-top-[10vw] z-[1111] laptop:w-[20vw] mobile:w-[40vw]"
+        data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png"
+        data-aos="slide-down"
+        src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png"
+      />
+      <div
+        class="laptop:flex laptop:flex-row h-[100%] laptop:justify-center gap-20 mobile:flex-col mobile:items-center mobile:justify-center"
+      >
+        <div
+          class="flex flex-col h-[34vw] laptop:w-[20%] py-[6vw] mobile:h-[100%] mobile:w-[100%]"
+        >
+          <p
+            class="laptop:text-[2.5vw] mobile:text-[10vw] font-bold text-[black] leading-none"
+          >
+            Absolute Creativity With No Coding
+          </p>
+          <p
+            class="laptop:text-[1.3vw] mobile:text-[7vw] text-[black] text-wrap leading-none laptop:pt-[2vw] mobile:pt-[5vw]"
+          >
+            Simple drag-and-drop website builder software to implement any ideas
+          </p>
+          <button
+            class="laptop:h-[3vw] laptop:w-[15vw] mobile:h-[15vw] mobile:w-[50vw] bg-[#b13c8b] laptop:text-[1.2vw] mobile:text-[4vw] text-[white] laptop:rounded-[0.4vw] mobile:rounded-[0.7vw] p-[0.2vw] laptop:mt-[3vw] mobile:mt-[10vw] font-bold tracking-widest uppercase"
+          >
+            All Features
+          </button>
+        </div>
+        <div
+          class="laptop:h-[40vw] laptop:w-[70%] mobile:h-[80vw] mobile:w-[100%] video relative"
+        >
+          <video
+            class="h-full w-full"
+            data-autoplay="1"
+            loop=""
+            muted=""
+            autoplay="autoplay"
+            playsinline=""
+            data-src="https://csite.resource.nicepage.com/editor.mp4?v2"
+            src="https://csite.resource.nicepage.com/editor.mp4?v2"
+          >
+            <source
+              type="video/mp4"
+              src="https://csite.resource.nicepage.com/editor.mp4?v2"
+            />
+            <p>Your browser does not support HTML5 video.</p>
+          </video>
+        </div>
+      </div>
+    </section>
+    <section class="h-[100%] w-[100%] bg-custom-gradient relative">
+      <img
+        alt=""
+        class="absolute top-[-4vw] left-[50vw] z-[1111] laptop:w-[20vw] mobile:w-[40vw]"
+        data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png"
+        data-aos="slide-down"
+        src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png"
+      />
+      <div
+        class="h-[100%] w-[100%] flex justify-center items-center gap-10 py-[10vw] laptop:flex-row mobile:flex-col mobile:px-[5vw]"
+      >
+        <div
+          class="flex laptop:w-[55vw] mobile:w-[100%] laptop:h-[30vw] mobile:h-[100%] relative"
+        >
+          <img
+            alt=""
+            class="hidden laptop:block laptop:w-[20vw] laptop:h-[10vw] mobile:w-[30vw] absolute laptop:-top-[5vw] laptop:left-[30vw] z-[1000]"
+            data-aos="slide-right"
+            data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/2b50004bd3e559a7ac1dac93/arrow350.png"
+            src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/2b50004bd3e559a7ac1dac93/arrow350.png"
+          />
+          <img
+            alt=""
+            class="mobile:hidden laptop:flex"
+            data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/61abe115407653fa90dd9398/old.jpg"
+            src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/61abe115407653fa90dd9398/old.jpg"
+          />
+          <img
+            alt="What is web design 3.0?"
+            class="bg-[white] mobile:block mobile:left-0 mobile:top-[0] mobile:w-[100%] mobile:h-[70vw] laptop:h-[25vw] laptop:w-[20vw] laptop:absolute laptop:top-[2vw] laptop:left-[27vw]"
+            data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/253fa47eb54f5844a678c0ea/new.jpg"
+            src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/253fa47eb54f5844a678c0ea/new.jpg"
+          />
+        </div>
+        <div class="laptop:h-[25vw] mobile:h-[100%]">
+          <p
+            class="laptop:text-[4vw] mobile:text-[10vw] leading-none pb-[3vw] text-[white] font-bold"
+          >
+            What Is <br />
+            Web Design <br />
+            3.0?
+          </p>
+          <p
+            class="laptop:text-[1.2vw] mobile:text-[5vw] leading-none text-[white]"
+          >
+            Learn how to build the trendiest <br />
+            websites and themes on the Web.
+          </p>
+          <button
+            class="laptop:h-[3vw] laptop:w-[20vw] mobile:h-[15vw] mobile:w-[70vw] bg-[#ef5047] laptop:text-[1.2vw] mobile:text-[4vw] text-[white] laptop:rounded-[0.4vw] mobile:rounded-[0.7vw] p-[0.2vw] self-center laptop:mt-[3vw] mobile:mt-[10vw] font-bold tracking-widest uppercase"
+          >
+            discover the secrets
+          </button>
+        </div>
+      </div>
+    </section>  
+    </section>
+    <section
+      class="h-[100%] w-[100%] flex flex-col py-[10vw] items-center relative"
+    >
+      <img
+        alt=""
+        class="laptop:w-[20vw] laptop:h-[10vw] mobile:w-[40vw] mobile:h-[30vw] absolute laptop:top-[-2vw] laptop:left-[4vw] mobile:-top-[10vw] mobile:left-0  z-[1000]"
+        data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/42a01cf1a5ed5435bd5c5625/bars12.png"
+        data-aos="slide-down"
+        src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/42a01cf1a5ed5435bd5c5625/bars12.png"
+      />
+      <p
+        class="text-[black] laptop:text-[4vw] mobile:text-[10vw] font-bold mobile:text-center"
+      >
+        All You Need And More
+      </p>
+      <div
+        class="flex laptop:flex-row mobile:flex-col mobile:gap-[30vw] laptop:gap-[3vw] pt-[5vw] w-full px-[5vw] laptop:justify-center mobile:items-center"
+      >
+        <div
+          class="laptop:h-[15vw] laptop:w-[15vw] mobile:w-[80vw] mobile:h-[80vw] bg-[#6792d7] needDiv relative flex pt-[0.2vw] pl-[5vw]"
+        >
+          <i
+            class="text-[3vw] mobile:hidden laptop:block text-white ri-pages-fill"
+          ></i>
+        </div>
+        <div
+          class="laptop:h-[15vw] laptop:w-[15vw] mobile:w-[80vw] mobile:h-[80vw] bg-[#ef5047] needDiv relative laptop:mt-[5vw] pt-[0.2vw] pl-[5vw]"
+        >
+          <i
+            class="text-[3vw] mobile:hidden laptop:flex text-white ri-drag-drop-line justify-start"
+          ></i>
+        </div>
+        <div
+          class="laptop:h-[15vw] laptop:w-[15vw] mobile:w-[80vw] mobile:h-[80vw] bg-[#5bb85d] needDiv relative flex pt-[0.2vw] pl-[5vw]"
+        >
+          <i class="text-[3vw] mobile:hidden laptop:flex text-white fa-solid fa-laptop-code"></i>
+        </div>
+        <div
+          class="laptop:h-[15vw] laptop:w-[15vw] mobile:w-[80vw] mobile:h-[80vw] bg-[#fa9056] needDiv relative laptop:mt-[5vw] flex pt-[0.2vw] pl-[5vw]"
+        >
+          <i
+            class="laptop:text-[3vw] mobile:hidden laptop:flex mobile:text-[10vw] text-white ri-terminal-window-line"
+          ></i>
+        </div>
+      </div>
+      <div
+        class="flex laptop:flex-row laptop:justify-center laptop:items-center mobile:items-start mobile:justify-start laptop:gap-[3vw] mobile:flex mobile:flex-col mobile:gap-[30vw] mobile:pt-[10vw] w-full absolute laptop:top-[15vw] laptop:left-4 mobile:top-[40vw]"
+      >
+        <div
+          class="laptop:h-[15vw] laptop:w-[15vw] mobile:w-[80vw] mobile:h-[80vw] relative mobile:left-[14vw] laptop:left-0 bg-[white] text-center p-[1vw] shadow-2xl flex flex-col justify-center items-center"
+        >
+          <p class="laptop:text-[1.3vw] mobile:text-[6vw] font-bold pb-[1vw]">
+            15,000+ of Website & Block Templates
+          </p>
+          <p class="laptop:text-[1.2vw] mobile:text-[5.5vw]">
+            Select from a huge variety of designer-made templates.
+          </p>
+        </div>
+        <div
+          class="laptop:h-[15vw] laptop:w-[15vw] mobile:w-[80vw] mobile:h-[80vw] relative mobile:left-[6vw] laptop:left-0 bg-[white] text-center p-[1vw] shadow-2xl flex flex-col justify-center items-center laptop:mt-[5vw] laptop:ml-[0]"
+        >
+          <p class="laptop:text-[1.3vw] mobile:text-[6vw] font-bold pb-[1vw]">
+            Easy Drag-n-Drop
+          </p>
+          <p class="laptop:text-[1.2vw] mobile:text-[5.5vw]">
+            Customize anything on your website with simple dragging.
+          </p>
+        </div>
+        <div
+          class="laptop:h-[15vw] laptop:w-[15vw] mobile:w-[80vw] mobile:h-[80vw] bg-[white] text-center p-[1vw] shadow-2xl flex flex-col justify-center items-center relative mobile:left-[14vw] laptop:left-0"
+        >
+          <p class="laptop:text-[1.3vw] mobile:text-[6vw] font-bold pb-[1vw]">
+            No Coding
+          </p>
+          <p class="laptop:text-[1.2vw] mobile:text-[5.5vw]">
+            Visually add, edit, move, and modify with no coding!
+          </p>
+        </div>
+        <div
+          class="laptop:h-[15vw] laptop:w-[15vw] mobile:w-[80vw] mobile:h-[80vw] relative mobile:left-[6vw] laptop:left-0 bg-[white] text-center p-[1vw] shadow-2xl flex flex-col justify-center items-center laptop:mt-[5vw] laptop:ml-[0]"
+        >
+          <p class="laptop:text-[1.3vw] mobile:text-[6vw] font-bold pb-[1vw]">
+            Mobile-Friendly
+          </p>
+          <p class="laptop:text-[1.2vw] mobile:text-[5.5vw]">
+            Build websites that look great on all modern devices.
+          </p>
+        </div>
+      </div>
+      <button
+        class="laptop:w-[18vw] laptop:h-[4vw] mobile:h-[15vw] mobile:w-[70vw] bg-[#b23c8a] laptop:text-[1.3vw] mobile:text-[4vw] text-[white] laptop:rounded-[0.4vw] mobile:rounded-[0.7vw] p-[0.2vw] self-center laptop:mt-[10vw] font-bold tracking-widest uppercase mobile:mt-[40vw]"
+      >
+        see all features
+      </button>
+    </section>
+    <section class="bg-custom-gradient2 h-[100%] w-[100%] mobile:px-[5vw]">
+      <div
+        class="flex flex-col text-center laptop:p-[5vw] h-[100%] mobile:py-[10vw]"
+      >
+        <p
+          class="laptop:text-[3vw] mobile:text-[7vw] text-[white] font-bold drop-shadow-lg text-center mobile:w-full"
+        >
+          Start With Beautiful Website Templates
+        </p>
+        <p
+          class="laptop:text-[1.3vw] mobile:text-[6vw] text-[white] mobile:py-[3vw]"
+        >
+          Choose from 15,000+ awesome, mobile-friendly website templates for
+          every kind of websites and blocks
+        </p>
+        <button
+          class="laptop:w-[15vw] laptop:h-[3.5vw] mobile:h-[10vw] mobile:w-[40vw] bg-[white] laptop:text-[1.1vw] mobile:text-[3vw] text-[black] laptop:rounded-[0.4vw] mobile:rounded-[0.7vw] p-[0.2vw] self-center mt-[5vw] font-bold tracking-widest uppercase"
+        >
+          get templates
+        </button>
+      </div>
+      <div
+        class="mobile:flex mobile:flex-col mobile:gap-4 laptop:flex laptop:flex-row laptop:gap-0 w-[100%] laptop:relative"
+      >
+        <img
+          alt="4000+ free html templates"
+          class="laptop:absolute laptop:left-[-10vw] mobile:left-[-10vw] laptop:top-0 laptop:w-[50vw]"
+          data-href="/templates"
+          title="Get Templates"
+          data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c2352d0c748d5981b36d020d/templates2.png"
+          src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c2352d0c748d5981b36d020d/templates2.png"
+          data-aos="slide-right"
+        />
+        <img
+          alt="6500+ free html templates"
+          class="laptop:self-end laptop:ml-[40vw] laptop:z-[1000] laptop:w-[50vw]"
+          data-href="/templates"
+          title="Get Templates"
+          data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/5864de0e70f05b2badaa48ba/examplesopt.jpg"
+          src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/5864de0e70f05b2badaa48ba/examplesopt.jpg"
+          data-aos="zoom-in-down"
+        />
+      </div>
+    </section>
+    <section
+      class="h-[100%] w-[100%] pt-[10vw] text-center flex flex-col justify-center items-center relative"
+    >
+      <img
+        alt=""
+        class="laptop:w-[20vw] laptop:h-[10vw] mobile:w-[40vw] mobile:h-[30vw] absolute laptop:top-[-2vw] laptop:right-[4vw] mobile:-top-[15vw] mobile:right-[3vw] z-[1000]"
+        data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/42a01cf1a5ed5435bd5c5625/bars12.png"
+        data-aos="slide-down"
+        src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/42a01cf1a5ed5435bd5c5625/bars12.png"
+        data-aos="slide-up"
+      />
+      <p
+        class="laptop:text-[3vw] mobile:text-[8vw] text-[black] font-bold drop-shadow-lg"
+      >
+        Perfect Results On Any Device
+      </p>
+      <p class="laptop:text-[1.3vw] mobile:text-[5vw] text-[black]">
+        Web pages are absolutely mobile-friendly and look perfect in all device
+        views
+      </p>
+      <img
+        alt="Perfect Results On Any Device"
+        class="pt-[5vw] mobile:w-[100vw] laptop:w-[70vw]"
+        data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/fb90ccdaadcc586c9725846b/devicesopt.jpg"
+        src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/fb90ccdaadcc586c9725846b/devicesopt.jpg"
+      />
+    </section>
+    <section
+      class="bg-[#0f2557] h-[100%] grid laptop:grid-cols-3 laptop:gap-[4vw] laptop:place-content-center laptop:px-[10vw] mobile:px-[5vw] relative mobile:w-[100%] mobile:mt-[30vw] laptop:mt-[0] mobile:py-[10vw]"
+    >
+      <img alt="" class="hidden laptop:block laptop:absolute laptop:right-[5vw] laptop:-top-[5vw] laptop:w-[17vw]" data-aos="slide-up" data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/7003df2549465e48bf1a4149/b2.png" src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/7003df2549465e48bf1a4149/b2.png">
+      <div class="mobile:w-[100%] mobile:flex justify-center items-center">
+        <img
+          alt="Nicepage Testimonial"
+          class="laptop:h-[30vw] laptop:w-[25vw] mobile:h-[70vw] mobile:w-[95vw] laptop:absolute laptop:top-[-4vw] mobile:absolute mobile:top-[-20vw] mobile:"
+          data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/a1cbceea08ad544995f1d163/testimonialresult.jpg"
+          src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/a1cbceea08ad544995f1d163/testimonialresult.jpg"
+        />
+      </div>
+      <div class="mobile:w-[100%]">
+        <p
+          class="laptop:text-[1.6vw] mobile:text-[7vw] text-[white] mobile:mt-[50vw] laptop:mt-[0]"
+        >
+          Nicepage is a must-have tool for any webmaster. It’s like a real
+          assistant, but works 100 times faster.
+        </p>
+        <p
+          class="text-[white] laptop:text-[1.2vw] mobile:text-[5vw] laptop:pt-[3vw] mobile:pt-[6vw]"
+        >
+          Alan Hollander
+        </p>
+        <p class="text-[white] laptop:text-[1.3vw] mobile:text-[6vw] font-bold">
+          Web Designer
+        </p>
+      </div>
+      <div>
+        <p
+          class="text-[white] laptop:text-[2.8vw] mobile:text-[10vw] font-bold leading-none laptop:pt-[0] mobile:pt-[15vw]"
+        >
+          More happy customers
+        </p>
+        <p class="text-[white] laptop:text-[1.8vw] mobile:text-[7vw] pt-[5vw]">
+          Create modern sites and get more customers
+        </p>
+      </div>
+    </section>
+    <section
+      class="flex flex-col items-center laptop:pt-[5vw] laptop:py-[0] mobile:py-[10vw] laptop:px-[0] mobile:px-[5vw]"
+    >
+      <p
+        class="laptop:text-[3vw] mobile:text-[10vw] mobile:font-bold text-center"
+      >
+        Companies That Use Our Products:
+      </p>
+      <div
+        class="flex laptop:gap-10 mobile:gap-[25vw] laptop:items-center laptop:flex-row mobile:flex-col laptop:py-[5vw] mobile:py-[10vw]"
+      >
+        <img
+          class="laptop:px-[3vw] laptop:w-[15vw] mobile:w-[60vw]"
+          alt="amazon logo"
+          data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/8b02a1955644573abb272f40/amazon.jpg"
+          src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/8b02a1955644573abb272f40/amazon.jpg"
+        />
+        <img
+          class="laptop:px-[3vw] laptop:w-[15vw] mobile:w-[60vw]"
+          alt="microsoft logo"
+          data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/34815a60bd2f5b46b5217732/microsoft.jpg"
+          src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/34815a60bd2f5b46b5217732/microsoft.jpg"
+        />
+        <img
+          class="laptop:px-[3vw] laptop:w-[15vw] mobile:w-[60vw]"
+          alt="camcast logo"
+          data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/ffd942b2e8bb5a239bf8ad65/comcast.jpg"
+          src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/ffd942b2e8bb5a239bf8ad65/comcast.jpg"
+        />
+        <img
+          class="laptop:px-[3vw] laptop:w-[15vw] mobile:w-[60vw]"
+          alt=""
+          data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/e3027ff7bcd75d0aa140ba90/expedia.jpg"
+          src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/e3027ff7bcd75d0aa140ba90/expedia.jpg"
+        />
+      </div>
+    </section>
+    <section
+      class="bg-[#f2f2f2] flex flex-col items-center laptop:pb-[5vw] mobile:py-[10vw] mobile:px-[5vw] laptop:py-[0] laptop:px-[0] relative"
+    >
+      <img
+      alt=""
+      class="absolute z-[1111] laptop:-top-[5vw] laptop:left-10 laptop:w-[20vw] mobile:w-[40vw] mobile:-top-[15vw] mobile:left-[5vw]"
+      data-src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png"
+      data-aos="slide-down"
+      src="//images03.nicepagecdn.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png"
+      />
+      <p class="laptop:text-[3vw] mobile:text-[10vw] pt-[5vw] text-center">
+        Free Website Builder Download
+      </p>
+      <p
+        class="laptop:text-[1.1vw] mobile:text-[5vw] text-center mobile:pt-[10vw] laptop:pt-[0]"
+      >
+        Download Free Website Design Software today and develop mobile-ready
+        websites that look great on any devices and browsers.
+      </p>
+      <button
+        class="laptop:h-[4vw] laptop:w-[20vw] mobile:h-[15vw] mobile:w-[50vw] flex justify-center items-center bg-[#f15048] laptop:text-[1.2vw] mobile:text-[4vw] text-[white] laptop: rounded-[0.4vw] mobile:rounded-[0.7vw] p-[0.2vw] self-center laptop:mt-[3vw] mobile:mt-[5vw] font-bold shadow-sm tracking-widest uppercase"
+      >
+        Download Now
+      </button>
+    </section>
+    <footer
+      class="flex items-center justify-center laptop:flex-row mobile:flex-col py-[5vw] laptop:gap-[3vw] mobile:gap-[20vw] bg-[#333333] mobile:px-[5vw] laptop:px-[0] mobile:py-[10vw] laptop:py[0]"
+    >
+      <div
+        class="flex flex-col laptop:gap-[0] mobile:gap-4 laptop:leading-8 mobile:leading-10 mobile:items-center"
+      >
+        <div
+          class="laptop:text-[1.5vw] mobile:text-[10vw] laptop:pb-[1vw] mobile:pb-[8vw] text-[#fcfcfc] uppercase text-center"
+        >
+          Company
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Terms of Use
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Privacy Policy
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          License Agreement
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          About Us
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Partners
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Abuse
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Contact Support
+        </div>
+      </div>
+      <div
+        class="flex flex-col laptop:leading-8 laptop:gap-[0] mobile:gap-4 mobile:leading-10 mobile:items-center text-center"
+      >
+        <div
+          class="laptop:text-[1.5vw] mobile:text-[10vw] laptop:pb-[1vw] mobile:pb-[8vw] text-[#fcfcfc] uppercase"
+        >
+          Product
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          FAQ
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Download
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Affiliates
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Documentation
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Partners
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Forum
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Blog
+        </div>
+      </div>
+      <div
+        class="flex flex-col laptop:gap-[0] mobile:gap-4 laptop:leading-8 mobile:leading-10 mobile:items-center text-center"
+      >
+        <div
+          class="laptop:text-[1.5vw] mobile:text-[10vw] laptop:pb-[1vw] mobile:pb-[8vw] text-[#fcfcfc] uppercase"
+        >
+          Themes & Templates
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Website Templates
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          WordPress Themes
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          HTML Templates
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          CSS Templates
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Joomla Templates
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          HTML5 Templates
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          One Page Templates
+        </div>
+      </div>
+      <div
+        class="flex flex-col laptop:gap-[0] mobile:gap-4 laptop:leading-8 mobile:leading-10 mobile:items-center text-center"
+      >
+        <div
+          class="laptop:text-[1.5vw] mobile:text-[10vw] laptop:pb-[1vw] mobile:pb-[8vw] text-[#fcfcfc] uppercase"
+        >
+          Nicepage
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Website Builder
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          HTML Website Builder
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          WordPress Website Builder
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Joomla Page Builder
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          WYSIWYG HTML Editor
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Static Site Generator
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          HTML Code Generator
+        </div>
+      </div>
+      <div
+        class="flex flex-col laptop:gap-[0] mobile:gap-4 laptop:leading-8 mobile:leading-10 mobile:items-center text-center"
+      >
+        <div
+          class="laptop:text-[1.5vw] mobile:text-[10vw] laptop:pb-[1vw] mobile:pb-[8vw] text-[#fcfcfc] uppercase"
+        >
+          Web Design
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Website Designs
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Web Page Designs
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          eCommerce Designs
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Landing Pages
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Homepage Designs
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Website Mockup
+        </div>
+        <div class="laptop:text-[1.1vw] mobile:text-[6vw] text-[#a8a8a8] cursor-pointer">
+          Landing Pages
+        </div>
+      </div>
+    </footer>
+    <div
+      class="flex items-center laptop:flex-row mobile:flex-col laptop:justify-evenly bg-[#3d3d3d] laptop:py-[1vw] mobile:pt-[10vw] mobile:pb-[1vw] mobile:px-[5vw] laptop:px-[0] mobile:text-center"
+    >
+      <div class="flex laptop:gap-[2vw] mobile:gap-[5vw]">
+        <div
+          class="flex items-center justify-center laptop:h-[2vw] laptop:w-[2vw] mobile:h-[10vw] mobile: w-[10vw] rounded-[50%] bg-[#3b5597]"
+        >
+          <i class="text-[white] cursor-pointer ri-facebook-fill"></i>
+        </div>
+        <div
+          class="flex items-center justify-center laptop:h-[2vw] laptop:w-[2vw] mobile:h-[10vw] mobile: w-[10vw] rounded-[50%] bg-[#51a9ed]"
+        >
+          <i class="text-[white] cursor-pointer ri-twitter-x-line"></i>
+        </div>
+        <div
+          class="flex items-center justify-center laptop:h-[2vw] laptop:w-[2vw] mobile:h-[10vw] mobile: w-[10vw] rounded-[50%] bg-[#b6302a]"
+        >
+          <i class="text-[white] cursor-pointer ri-youtube-fill"></i>
+        </div>
+        <div
+          class="flex items-center justify-center laptop:h-[2vw] laptop:w-[2vw] mobile:h-[10vw] mobile: w-[10vw] rounded-[50%] bg-[#bc243c]"
+        >
+          <i class="text-[white] cursor-pointer ri-pinterest-fill"></i>
+        </div>
+      </div>
+      <p
+        class="text-[#a8a8a8] laptop:text-[1vw] mobile:text-[5vw] laptop:pt-[0vw] mobile:pt-[10vw]"
+      >
+        2024 © Nicepage Free Website Builder Software - All Rights Reserved
+      </p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+
+    const responsiveMenu = document.querySelector('.responsiveMenu');
+    const menuClick = document.querySelector('.menuBtn')
+    const icon = menuClick.querySelector('i');
+    menuClick.addEventListener('click', function () {
+      if (icon.classList.contains('ri-menu-line')) {
+        icon.classList.remove('ri-menu-line');
+        icon.classList.add('ri-close-large-line');
+      } else {
+        icon.classList.remove('ri-close-large-line');
+        icon.classList.add('ri-menu-line');
+      }
+
+      // transform property change
+
+      if(responsiveMenu.classList.contains('translate-x-[100%]')){
+        responsiveMenu.classList.add('translate-x-0');
+        responsiveMenu.classList.remove('translate-x-[100%]');
+      }
+      else{
+        responsiveMenu.classList.add('translate-x-[100%]');
+        responsiveMenu.classList.remove('translate-x-0');
+      }
+    });
+    // Select all div elements inside responsiveMenu
+    const checkDivs = responsiveMenu.querySelectorAll('div');
+
+    // Loop through each div element and attach a click event listener
+    checkDivs.forEach((div) => {
+      div.addEventListener('click', function () {
+        icon.classList.remove('ri-close-large-line');
+        icon.classList.add('ri-menu-line');
+        // Add and remove classes to toggle the menu
+        responsiveMenu.classList.add('translate-x-[100%]');
+        responsiveMenu.classList.remove('translate-x-0');
+      });
+    });
+
+
+    </script>
+  </body>
+</html>
